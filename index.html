@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portal de filmes e jogos criado por Esther Viviani para a atividade de Desenvolvimento Web III.">
+    <title>CineGame | Filmes e Jogos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="gamer-theme">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#inicio">CineGame</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#filmes">Filmes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#jogos">Jogos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre o site</a></li>
+            <li class="nav-item"><a class="nav-link" href="#duvidas">Dúvidas</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="inicio" class="hero py-5">
+        <div class="container py-lg-4">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <p class="text-primary fw-semibold mb-2">ATIVIDADE DE DESENVOLVIMENTO WEB III</p>
+              <h1 class="display-5 fw-bold">Filmes e jogos em um só lugar</h1>
+              <p class="lead mt-3">Um portal simples para reunir sugestões de filmes e jogos de diferentes estilos.</p>
+              <a class="btn btn-primary" href="#filmes">Ver sugestões</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" aria-labelledby="destaques-titulo">
+        <div class="container">
+          <h2 id="destaques-titulo" class="text-center mb-4">Destaques da semana</h2>
+          <div id="carouselDestaques" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Destaque 1"></button>
+              <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="1" aria-label="Destaque 2"></button>
+              <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="2" aria-label="Destaque 3"></button>
+            </div>
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active"><div class="slide-content slide-1"><h3>Filmes para maratonar</h3><p>De ação e aventura até histórias de ficção científica para assistir no fim de semana.</p></div></div>
+              <div class="carousel-item"><div class="slide-content slide-2"><h3>Jogos para explorar</h3><p>Jogos de corrida, aventura e multiplayer para diferentes tipos de jogadores.</p></div></div>
+              <div class="carousel-item"><div class="slide-content slide-3"><h3>Sempre tem algo novo</h3><p>O objetivo é descobrir opções diferentes e guardar as sugestões favoritas.</p></div></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Próximo</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-light" aria-labelledby="conteudos-titulo">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h2 id="conteudos-titulo">Sugestões para assistir e jogar</h2>
+            <p class="text-secondary mb-0">Uma seleção simples separada por categoria.</p>
+          </div>
+          <h3 id="filmes" class="h4 mb-3">Filmes</h3>
+          <div class="row g-4 mb-5">
+            <div class="col-sm-6 col-lg-4"><article class="card h-100"><div class="card-body"><span class="badge text-bg-danger mb-2">Ação</span><h3 class="h4">Filmes de ação</h3><p class="card-text">Opções com aventura, missões, perseguições e bastante movimento.</p><button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalConteudo">Ver detalhes</button></div></article></div>
+            <div class="col-sm-6 col-lg-4"><article class="card h-100"><div class="card-body"><span class="badge text-bg-primary mb-2">Ficção científica</span><h3 class="h4">Outros mundos</h3><p class="card-text">Histórias sobre futuro, tecnologia, espaço e ideias diferentes.</p><button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalConteudo">Ver detalhes</button></div></article></div>
+            <div class="col-sm-6 col-lg-4"><article class="card h-100"><div class="card-body"><span class="badge text-bg-warning mb-2">Animação</span><h3 class="h4">Animações</h3><p class="card-text">Filmes leves para assistir sozinho, com amigos ou em família.</p><button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalConteudo">Ver detalhes</button></div></article></div>
+          </div>
+          <h3 id="jogos" class="h4 mb-3">Jogos</h3>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4"><article class="card h-100"><div class="card-body"><span class="badge text-bg-success mb-2">Aventura</span><h3 class="h4">Jogos de aventura</h3><p class="card-text">Jogos para explorar cenários, resolver desafios e acompanhar histórias.</p><button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalConteudo">Ver detalhes</button></div></article></div>
+            <div class="col-sm-6 col-lg-4"><article class="card h-100"><div class="card-body"><span class="badge text-bg-dark mb-2">Corrida</span><h3 class="h4">Jogos de corrida</h3><p class="card-text">Para quem gosta de velocidade, pistas e desafios contra o tempo.</p><button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalConteudo">Ver detalhes</button></div></article></div>
+            <div class="col-sm-6 col-lg-4"><article class="card h-100"><div class="card-body"><span class="badge text-bg-info mb-2">Online</span><h3 class="h4">Jogos multiplayer</h3><p class="card-text">Jogos para se divertir com outras pessoas e jogar em equipe.</p><button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalConteudo">Ver detalhes</button></div></article></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="py-5" aria-labelledby="sobre-titulo">
+        <div class="container"><div class="row justify-content-center"><div class="col-lg-8">
+          <h2 id="sobre-titulo">Sobre o CineGame</h2>
+          <p>O CineGame foi criado como um portal simples para organizar sugestões de filmes e jogos em um mesmo lugar.</p>
+          <p>O tema foi escolhido porque filmes e jogos são formas de entretenimento que podem reunir histórias, criatividade, tecnologia e diversão.</p>
+          <div class="alert alert-primary mb-0" role="alert"><strong>Projeto acadêmico:</strong> desenvolvido por Esther Viviani para a atividade de Desenvolvimento Web III.</div>
+        </div></div></div>
+      </section>
+
+      <section id="duvidas" class="py-5 bg-light" aria-labelledby="duvidas-titulo">
+        <div class="container"><div class="row justify-content-center"><div class="col-lg-8">
+          <h2 id="duvidas-titulo" class="text-center mb-4">Dúvidas frequentes</h2>
+          <div class="accordion" id="accordionDuvidas">
+            <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#resposta1" aria-expanded="true" aria-controls="resposta1">Que tipo de filme aparece no portal?</button></h3><div id="resposta1" class="accordion-collapse collapse show" data-bs-parent="#accordionDuvidas"><div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt, sem id feugiat placerat, justo dui consequat libero.</div></div></div>
+            <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta2" aria-expanded="false" aria-controls="resposta2">Quais jogos estão no portal?</button></h3><div id="resposta2" class="accordion-collapse collapse" data-bs-parent="#accordionDuvidas"><div class="accordion-body">O site separa sugestões de jogos de aventura, corrida e multiplayer.</div></div></div>
+            <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta3" aria-expanded="false" aria-controls="resposta3">O portal funciona no celular?</button></h3><div id="resposta3" class="accordion-collapse collapse" data-bs-parent="#accordionDuvidas"><div class="accordion-body">Sim. O layout usa o grid responsivo do Bootstrap para reorganizar os cards em telas menores.</div></div></div>
+          </div>
+        </div></div></div>
+      </section>
+    </main>
+
+    <footer class="bg-primary text-white py-3"><div class="container text-center"><strong>CineGame</strong> · Esther Viviani · Desenvolvimento de Software Multiplataforma - 3º semestre</div></footer>
+
+    <div class="modal fade" id="modalConteudo" tabindex="-1" aria-labelledby="modalConteudoTitulo" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="modalConteudoTitulo">Mais informações</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button></div><div class="modal-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button></div></div></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+:root {
+  --gamer-dark: #0f1620;
+  --gamer-panel: #162331;
+  --gamer-panel-light: #1d3042;
+  --gamer-blue: #66c0f4;
+  --gamer-text: #c7d5e0;
+  --gamer-muted: #8f9eaa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.gamer-theme {
+  background: var(--gamer-dark);
+  color: var(--gamer-text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gamer-theme .navbar {
+  background: #101923 !important;
+  border-bottom: 1px solid rgba(102, 192, 244, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.gamer-theme .navbar-brand {
+  color: var(--gamer-blue);
+  font-size: 1.45rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.gamer-theme .nav-link { color: #c7d5e0; }
+.gamer-theme .nav-link:hover,
+.gamer-theme .nav-link:focus { color: var(--gamer-blue); }
+
+.gamer-theme .hero {
+  background: radial-gradient(circle at 82% 25%, rgba(54, 124, 183, 0.45), transparent 26%), linear-gradient(120deg, #101b2a 0%, #1b344b 53%, #102131 100%);
+  border-bottom: 1px solid rgba(102, 192, 244, 0.18);
+  position: relative;
+}
+
+.gamer-theme .hero:after {
+  background-image: linear-gradient(rgba(102, 192, 244, 0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(102, 192, 244, 0.07) 1px, transparent 1px);
+  background-size: 36px 36px;
+  content: "";
+  inset: 0;
+  opacity: 0.5;
+  pointer-events: none;
+  position: absolute;
+}
+
+.gamer-theme .hero .container { position: relative; z-index: 1; }
+.gamer-theme h1,
+.gamer-theme h2,
+.gamer-theme h3 { color: #ffffff; font-weight: 700; }
+.gamer-theme .hero h1 { max-width: 720px; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35); }
+.gamer-theme .hero .text-primary { color: var(--gamer-blue) !important; letter-spacing: 0.08em; }
+.gamer-theme .hero .lead,
+.gamer-theme .text-secondary { color: var(--gamer-text) !important; }
+
+.gamer-theme .btn-primary {
+  background: linear-gradient(90deg, #1676b8, #2d9de2);
+  border-color: #5db6eb;
+  box-shadow: 0 0 14px rgba(42, 163, 227, 0.25);
+  font-weight: 700;
+}
+
+.gamer-theme .btn-primary:hover,
+.gamer-theme .btn-primary:focus { background: linear-gradient(90deg, #258dcc, #65c5f5); border-color: #9bdbfb; }
+.gamer-theme .btn-outline-primary { border-color: #4caee3; color: #8bd5f7; }
+.gamer-theme .btn-outline-primary:hover,
+.gamer-theme .btn-outline-primary:focus { background: #218cc7; border-color: #218cc7; color: #fff; }
+
+.gamer-theme .slide-content { min-height: 280px; padding: 2.5rem 18%; position: relative; }
+.gamer-theme .slide-content:before { border: 2px solid rgba(255, 255, 255, 0.15); border-radius: 50%; content: ""; height: 190px; position: absolute; right: 11%; top: 42px; width: 190px; }
+.gamer-theme .slide-content h3,
+.gamer-theme .slide-content p { position: relative; z-index: 1; }
+.gamer-theme .slide-1 { background: linear-gradient(120deg, #152a45, #226b9d); }
+.gamer-theme .slide-2 { background: linear-gradient(120deg, #182433, #38634e); }
+.gamer-theme .slide-3 { background: linear-gradient(120deg, #241d40, #594781); }
+
+.gamer-theme .bg-light { background: #101923 !important; }
+
+.gamer-theme .card {
+  background: linear-gradient(145deg, var(--gamer-panel), #121d28);
+  border: 1px solid rgba(102, 192, 244, 0.16);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.gamer-theme .card:before { background: linear-gradient(90deg, #66c0f4, transparent); content: ""; height: 3px; left: 0; position: absolute; top: 0; width: 100%; }
+.gamer-theme .card:hover { border-color: rgba(102, 192, 244, 0.72); box-shadow: 0 0 22px rgba(42, 162, 228, 0.22); transform: translateY(-6px); }
+.gamer-theme .card-text { color: var(--gamer-text); }
+.gamer-theme .badge { letter-spacing: 0.03em; }
+
+.gamer-theme #sobre {
+  background: linear-gradient(110deg, #162331, #0f1620);
+  border-bottom: 1px solid rgba(102, 192, 244, 0.13);
+  border-top: 1px solid rgba(102, 192, 244, 0.13);
+}
+
+.gamer-theme .alert-primary { background: rgba(40, 105, 147, 0.2); border-color: rgba(102, 192, 244, 0.4); color: #d4edfc; }
+.gamer-theme .accordion-item { background: var(--gamer-panel); border-color: rgba(102, 192, 244, 0.18); color: var(--gamer-text); }
+.gamer-theme .accordion-button { background: var(--gamer-panel); color: #ffffff; font-weight: 600; }
+.gamer-theme .accordion-button:not(.collapsed) { background: var(--gamer-panel-light); box-shadow: inset 0 -1px 0 rgba(102, 192, 244, 0.18); color: var(--gamer-blue); }
+.gamer-theme .accordion-button:focus { box-shadow: 0 0 0 0.2rem rgba(102, 192, 244, 0.25); }
+.gamer-theme .accordion-button::after { filter: brightness(0) invert(1); }
+
+.gamer-theme .bg-primary { background: #101923 !important; }
+.gamer-theme footer { border-top: 1px solid rgba(102, 192, 244, 0.2); color: var(--gamer-muted) !important; }
+.gamer-theme footer strong { color: var(--gamer-blue); }
+
+.gamer-theme .modal-content { background: #172331; border: 1px solid rgba(102, 192, 244, 0.35); color: var(--gamer-text); }
+.gamer-theme .modal-header,
+.gamer-theme .modal-footer { border-color: rgba(102, 192, 244, 0.18); }
+.gamer-theme .btn-close { filter: invert(1) grayscale(1) brightness(2); }
+
+@media (max-width: 575.98px) {
+  .gamer-theme .slide-content { min-height: 250px; padding: 2rem 3.5rem; }
+  .gamer-theme .slide-content:before { height: 125px; right: -32px; top: 90px; width: 125px; }
+  .gamer-theme .card-text { min-height: auto; }
+}
